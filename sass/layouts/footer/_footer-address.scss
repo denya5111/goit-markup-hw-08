@@ -1,0 +1,30 @@
+.footer-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.address-list {
+  display: inline-block;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142;
+  letter-spacing: 0.03em;
+  font-style: normal;
+}
+.address-list a {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.address-list .map-link {
+  color: #ffffff;
+}
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+  display: block;
+}

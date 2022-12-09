@@ -1,0 +1,29 @@
+.peculiarities__list {
+  display: flex;
+  gap: 30px;
+}
+.peculiarities__icon-container {
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.peculiarities__item {
+  width: calc((100% - 90px) / 4);
+}
+.peculiarities__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+.peculiarities__text {
+  font-size: 14px;
+  line-height: 1.7142;
+  letter-spacing: 0.03em;
+}

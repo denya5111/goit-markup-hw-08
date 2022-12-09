@@ -1,0 +1,26 @@
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/placeholders';
+
+@import './utils/hide';
+
+@import './base/reset';
+@import './base/common';
+
+@import './layouts/header/header';
+@import './layouts/header/header-logo';
+@import './layouts/header/site-nav';
+@import './layouts/header/auth-nav';
+@import './layouts/section/hero';
+@import './layouts/section/peculiarities';
+@import './layouts/section/works';
+@import './layouts/section/team';
+@import './layouts/section/clients';
+@import './layouts/footer/footer';
+@import './layouts/footer/footer-logo';
+@import './layouts/footer/footer-address';
+@import './layouts/footer/footer-join';
+@import './layouts/footer/footer-subscription';
+@import './layouts/section/portfolio';
+
+@import './components/modal';
