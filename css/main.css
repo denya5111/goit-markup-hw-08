@@ -68,7 +68,6 @@ button {
 }
 
 .container {
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -94,8 +93,11 @@ header {
 }
 
 .container.header {
+  position: relative;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  height: 60px;
 }
 
 .logo {
@@ -107,22 +109,68 @@ header {
   line-height: 1.1923;
   letter-spacing: 0.03em;
 }
-.header .logo {
-  margin-right: 93px;
+@media screen and (min-width: 768px) {
+  .header .logo {
+    margin-right: 93px;
+  }
 }
 
 .header-logo-ending {
   color: #000000;
 }
 
+.mobile-menu__button {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  padding: 0;
+}
+.mobile-menu__button:hover, .mobile-menu__button:focus {
+  color: var(--accent-color);
+}
+
+.mobile-menu__icon--open {
+  fill: currentColor;
+}
+.mobile-menu__button.is-open .mobile-menu__icon--open {
+  display: none;
+}
+
+.mobile-menu__icon--close {
+  display: none;
+  fill: currentColor;
+}
+.mobile-menu__button.is-open .mobile-menu__icon--close {
+  display: block;
+}
+
+.menu__container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  min-width: 200px;
+  height: 796px;
+  padding: 48px 40px;
+  background-color: red;
+}
+.menu__container.is-open {
+  display: block;
+}
+
 .site-nav {
   display: flex;
+}
+
+.site-nav__list {
+  display: none;
   gap: 50px;
   margin-top: 32px;
   margin-bottom: 32px;
 }
 
-.site-nav a {
+.site-nav__list a {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -130,15 +178,15 @@ header {
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.site-nav a:hover, .site-nav a:focus {
+.site-nav__list a:hover, .site-nav__list a:focus {
   color: var(--accent-color);
 }
 
-.site-nav .current {
+.site-nav__list .current {
   color: var(--accent-color);
   position: relative;
 }
-.site-nav .current::after {
+.site-nav__list .current::after {
   content: "";
   position: absolute;
   top: 48px;
@@ -151,7 +199,7 @@ header {
 }
 
 .auth-nav {
-  display: flex;
+  display: none;
   margin-left: auto;
   gap: 50px;
 }

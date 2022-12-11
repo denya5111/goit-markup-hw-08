@@ -1,10 +1,15 @@
 .site-nav {
   display: flex;
+  // align-items: center;
+}
+.site-nav__list {
+  display: none;
+  // display: flex;
   gap: 50px;
   margin-top: 32px;
   margin-bottom: 32px;
 }
-.site-nav a {
+.site-nav__list a {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -18,12 +23,12 @@
     color: var(--accent-color);
   }
 }
-.site-nav .current {
+.site-nav__list .current {
   color: var(--accent-color);
   position: relative;
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 48px;
     left: 0;

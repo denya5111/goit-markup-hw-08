@@ -1,0 +1,39 @@
+.mobile-menu__button {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  padding: 0;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.mobile-menu__icon--open {
+  fill: currentColor;
+  .mobile-menu__button.is-open & {
+    display: none;
+  }
+}
+.mobile-menu__icon--close {
+  display: none;
+  fill: currentColor;
+  .mobile-menu__button.is-open & {
+    display: block;
+  }
+}
+.menu__container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  width: 100%;
+  min-width: 200px;
+  height: 796px;
+  padding: 48px 40px;
+  background-color: red;
+  &.is-open {
+    display: block;
+  }
+}
