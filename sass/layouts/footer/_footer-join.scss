@@ -1,6 +1,13 @@
 .footer-join {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 206px;
   height: 80px;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 .footer-join-title {
   margin-bottom: 20px;

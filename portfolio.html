@@ -25,9 +25,34 @@
         <a href="./index.html" class="logo"
           >Web<span class="header-logo-ending">Studio</span>
         </a>
-        <nav>
-          <ul class="site-nav">
-            <li class="item"><a href="./index.html">Студія</a></li>
+        <nav class="site-nav">
+          <button
+            class="mobile-menu__button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu__container"
+            data-menu-button
+          >
+            <svg
+              width="40px"
+              height="40px"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="mobile-menu__icon--open"
+                href="./images/icons.svg#icon-menu"
+              ></use>
+              <use
+                class="mobile-menu__icon--close"
+                href="./images/icons.svg#icon-close-menu"
+              ></use>
+            </svg>
+          </button>
+          <div class="menu__container" id="menu__container" data-menu></div>
+          <ul class="site-nav__list">
+            <li class="item">
+              <a href="./index.html">Студія</a>
+            </li>
             <li class="item">
               <a href="./portfolio.html" class="current">Портфоліо</a>
             </li>
