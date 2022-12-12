@@ -20,6 +20,7 @@ button {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  min-width: 200px;
 
   @media screen and (min-width: 480px) {
     width: 480px;
@@ -36,14 +37,21 @@ button {
   @extend %section;
 }
 .section__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1666;
-  text-align: center;
+  font-size: 28px;
+  line-height: 1.1785;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--title-text-color);
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.1666;
+  }
 }
 .section__list .title {
   margin-bottom: 10px;

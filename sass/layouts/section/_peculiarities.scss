@@ -1,6 +1,13 @@
 .peculiarities__list {
-  display: flex;
   gap: 30px;
+  display: block;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  // @media screen and (min-width: 1200px) {
+  //   flex-wrap: none;
+  // }
 }
 .peculiarities__icon-container {
   height: 120px;
@@ -12,7 +19,13 @@
   margin-bottom: 30px;
 }
 .peculiarities__item {
-  width: calc((100% - 90px) / 4);
+  // width: calc((100% - 30px) / 4);
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+  }
 }
 .peculiarities__title {
   font-weight: 700;
