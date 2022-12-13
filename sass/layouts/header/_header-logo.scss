@@ -4,13 +4,20 @@
   color: var(--accent-color);
   font-family: $fontLogo;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.1923;
+  font-size: 24px;
+  line-height: 1.1666;
   letter-spacing: 0.03em;
 
+  @media screen and (min-width: 768px) {
+    .header & {
+      margin-right: 87px;
+    }
+  }
   @media screen and (min-width: 1200px) {
     .header & {
-      margin-right: 93px;
+      margin-right: 92px;
+      font-size: 26px;
+      line-height: 1.1923;
     }
   }
 }
