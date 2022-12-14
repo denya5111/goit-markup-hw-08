@@ -8,6 +8,9 @@ header {
   justify-content: space-between;
   height: 60px;
 
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
   @media screen and (min-width: 768px) {
     height: auto;
   }
