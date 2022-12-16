@@ -3,7 +3,7 @@
   height: 40px;
   background-color: transparent;
   padding: 0;
-  z-index: 1;
+  z-index: 2;
 
   &:hover,
   &:focus {
@@ -38,6 +38,7 @@
     height: 100vh;
     padding: 48px 40px;
     background-color: #ffffff;
+    z-index: 1;
 
     &.is-open {
       display: flex;
@@ -55,6 +56,7 @@
 
 .menu-social__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   margin-top: 64px;
 

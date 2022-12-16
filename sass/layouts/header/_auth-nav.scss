@@ -1,5 +1,4 @@
 .auth-nav {
-  // display: none;
   display: flex;
   flex-direction: column-reverse;
   gap: 32px;
@@ -12,20 +11,7 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: row;
-    // margin-left: auto;
     gap: 30px;
-  }
-}
-.auth-nav__item--mail {
-  @media screen and (max-width: 767px) {
-    font-size: 24px;
-    line-height: 28px;
-  }
-}
-.auth-nav__item--tel {
-  @media screen and (max-width: 767px) {
-    font-size: 34px;
-    line-height: 40px;
   }
 }
 .auth-nav .button {
@@ -52,9 +38,28 @@
     line-height: 1.1428;
   }
 }
+.auth-nav__item--mail.button {
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+.auth-nav__item--tel.button {
+  @media screen and (max-width: 767px) {
+    font-size: 34px;
+    line-height: 40px;
+    color: var(--accent-color);
+  }
+}
 .mail-icon {
   fill: currentColor;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 .smartphone-icon {
   fill: currentColor;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }

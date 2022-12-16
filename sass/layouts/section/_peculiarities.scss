@@ -1,8 +1,11 @@
 .peculiarities__list {
+  display: flex;
+  flex-direction: column;
   gap: 30px;
-  display: block;
+
   @media screen and (min-width: 768px) {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
   }
 }
@@ -31,6 +34,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 .peculiarities__text {
   font-size: 14px;
